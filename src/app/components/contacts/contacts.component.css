@@ -1,0 +1,75 @@
+.row {
+  margin: 10px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.btn-add {
+  text-align: right;
+}
+
+table, td, th {
+  border-bottom: 2px solid;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+}
+
+table {
+  width: 50%;
+  border-collapse: separate;
+  border: solid black 1px;
+  border-radius: 6px;
+}
+
+input#edit {
+  background-color: #034f84;
+}
+
+input#delete {
+  background-color: #f51f1f;
+}
+
+.form-inputs {
+  width: 20%;
+}
+
+.form {
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.form-add {
+  background-color: #f0f0f0;
+  margin: 12px;
+}
+
+.form-update {
+  margin: 12px;
+  background-color: #f0f0f0;
+}
+
+.form-add, .form-update {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=contacts.component.css.map */

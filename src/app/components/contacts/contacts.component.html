@@ -1,0 +1,90 @@
+
+
+
+<div class = "wrapper">
+    <div class = "row" align = "center">
+        <div>
+            <h2>Contact Information System</h2>
+        </div>
+        <div class="form form-add">
+            <h3>Create Contact</h3>
+            <form>
+            <div class = "form-control">
+                <input type = "text" name = "name" id = "name" placeholder="Enter Full Name" [(ngModel)]="model.name" >
+            </div>
+            <div class = "form-control">
+                <input type = "text" name = "phone" id = "phone" placeholder="Enter the phone number" [(ngModel)]="model.phone">
+            </div>
+            <div class = "form-control">
+                <select name = "type" [(ngModel)]="model.type">
+                    <option value = "">Select Contact Type</option>
+                    <option value = "Own Number">Own Number</option>
+                    <option value = "Family">Family</option>
+                    <option value = "Friend">Friend</option>
+                    <option value = "Work">Work</option>
+                </select>
+            </div>
+            <div class = "btn-add">
+                <input class = "" type="submit" class="" (click)="addContact()" value = "Add Contact">
+            </div>
+            </form>
+            </div>
+
+
+            <div class = "form form-update">
+                 <h3>Update Contact</h3>
+                <form>
+                <div class = "form-control">
+                    <input type = "text" name = "name" id = "name" placeholder="Enter Full Name" [(ngModel)]="model2.name" >
+                </div>
+                <div class = "form-control">
+                    <input type = "text" name = "phone" id = "phone" placeholder="Enter the phone number" [(ngModel)]="model2.phone">
+                </div>
+                <div class = "form-control">
+                    <select name = "type" [(ngModel)]="model2.type">
+                        <option value = "">Select Contact Type</option>
+                        <option value = "Own Number">Own Number</option>
+                        <option value = "Family">Family</option>
+                        <option value = "Friend">Friend</option>
+                        <option value = "Work">Work</option>
+                    </select>
+                </div>
+                <div class = "btn-add">
+                    <input class = "" type="submit" class="" (click)="updateContact()" value = "Update Contact">
+                </div>
+                </form>
+            </div>
+        
+
+
+    </div>
+    <div class="row-contact" align = "center">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Contact Type</th>
+                <th>Action</th>
+            </tr>
+            <tr *ngFor="let contact of contacts; let i = index">
+                <td>{{contact.name}}</td>
+                <td>{{contact.phone}}</td>
+                <td>{{contact.type}}</td>
+                <td>
+                    <input  type = "submit" value = "Edit" id = "edit" (click)="editContact(i)">
+                    <input  type = "submit" value = "Delete" id = "delete" (click)="deleteContact(i)">
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- <div>
+    <label for = "item-input">Add an Item:</label>
+    <input type = "text" id = "item-input" #newItem>
+    <button type = "button" (click) = "addNewItem()"></button>
+</div> -->
+
+<div class="form-inputs">
+   
+</div>
